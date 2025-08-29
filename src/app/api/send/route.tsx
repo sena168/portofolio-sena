@@ -6,8 +6,8 @@ import Validator from 'validatorjs';
 
 export async function POST(req: Request) {
   // Fill your name and email
-  const yourName = 'Wisnu Aji';
-  const yourEmail = 'wisnuajipamungkas354@gmail.com';
+  const yourName = 'Sena Prasena';
+  const yourEmail = 'senaprasena@gmail.com';
 
   interface IRequestBody {
     senderEmail: string;
@@ -29,9 +29,9 @@ export async function POST(req: Request) {
 
     if(validate.passes()) {
       const { data, error } = await resend.emails.send({
-        from: senderEmail,
+        from: 'onboarding@resend.dev',
         to: [yourEmail],
-        subject: 'Hello world',
+        subject: `New message from ${senderName}`,
         react: <EmailTemplate yourName={yourName} senderName={senderName} senderEmail={senderEmail} contentMessage={contentMessage} />
       });
 

@@ -259,7 +259,7 @@ export const testimonialsData = {
     {
       id: '2',
       quote:
-        'Edwin delivered beyond expectations. The codebase is clean, maintainable, and the UI matches our Figma designs perfectly across breakpoints.',
+        'Sena Prasena delivered beyond expectations. The codebase is clean, maintainable, and the UI matches our Figma designs perfectly across breakpoints.',
       author: {
         name: 'Liam Brooks',
         title: 'Engineering Lead',
